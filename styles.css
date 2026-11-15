@@ -22,3 +22,23 @@
 .visual-card figcaption strong{font:600 18px var(--display);letter-spacing:-.02em}
 .visual-card figcaption small{font:10px var(--mono);color:#c1ccd4}
 @media(max-width:680px){.visual-section{padding:66px 23px 76px}.visual-section-head{display:block;margin-bottom:24px}.visual-section-head h2{font-size:34px}.visual-section-head>p{margin-top:12px}.visual-cards{grid-template-columns:1fr;gap:12px}.visual-card{height:280px}.visual-card figcaption{left:17px;bottom:17px}.hero-visual:after{background:linear-gradient(90deg,rgba(16,27,43,.72),rgba(16,27,43,.27) 85%),linear-gradient(0deg,rgba(16,27,43,.7),transparent 38%)}.hero-photo{object-position:58% center}.visual-caption{right:23px;bottom:54px;font-size:8px;gap:12px}}
+
+/* Readability: raise supporting copy while keeping technical labels compact */
+body{font-size:16px}
+.hero-lede{font-size:18px;line-height:1.75}
+.intro-text{font-size:16px;line-height:1.8}
+.impact-heading p{font-size:15px}
+.metric p,.impact-footnote{font-size:14px;line-height:1.75}
+.story p,.role-copy,.skill-columns p{font-size:15px;line-height:1.8}
+.experience-title>p:last-child,.contact-note{font-size:15px;line-height:1.75}
+.degree p,.awards p{font-size:13px;line-height:1.7}
+.credential-list span{font-size:13px}
+.contact-links a{font-size:13px}
+.visual-section-head>p{font-size:14px;line-height:1.75}
+@media(max-width:680px){
+  .hero-lede{font-size:16px}
+  .intro-text,.story p,.role-copy,.skill-columns p{font-size:15px}
+  .metric p,.impact-footnote,.experience-title>p:last-child,.contact-note,.visual-section-head>p{font-size:14px}
+  .degree p,.awards p,.credential-list span{font-size:13px}
+  .contact-links a{font-size:13px}
+}
