@@ -28,14 +28,30 @@
       <div class="hero-grid" aria-hidden="true"></div>
       <div class="hero-copy">
         <p class="eyebrow"><span class="status-dot"></span> AEROSPACE · MANUFACTURING · PROGRAM DELIVERY</p>
-        <h1>Engineering complex work.<br><em>Making it work better.</em></h1>
+        <h1>Engineering complex<br>work from build<br><em>to delivery.</em></h1>
         <p class="hero-lede">I connect engineering, manufacturing, quality and technology to move aerospace programs forward—from production readiness and functional test to automation and continuous improvement.</p>
         <div class="hero-actions"><a class="button button-primary" href="#impact">Explore my work <span>↓</span></a><a class="button button-quiet" href="assets/Balaji_Balu_Program_Manager_Resume.pdf" download>Download resume <span>↗</span></a></div>
         <div class="hero-meta"><span>CHENNAI, INDIA</span><span class="meta-rule"></span><span>OPEN TO RELOCATION</span><span class="meta-rule"></span><span>14+ YEARS IN AEROSPACE</span></div>
       </div>
-      <div class="hero-visual" aria-hidden="true">
-        <img class="hero-photo" src="assets/hero-hangar.jpg" alt="" fetchpriority="high">
-        <div class="visual-caption"><span>01 / 03</span><span>DESIGN · BUILD · VALIDATE</span></div>
+      <div class="hero-map-card" aria-labelledby="hero-map-title">
+        <div class="hero-map-topline"><span id="hero-map-title">AIRCRAFT SYSTEMS · INTERACTIVE MAP</span><span><i></i> SELECT A FOCUS AREA</span></div>
+        <div class="hero-aircraft" role="group" aria-label="Aircraft system focus points">
+          <img src="assets/aircraft-systems-map-hd.svg" alt="High-resolution top-down aircraft systems illustration with highlighted cyan and magenta regions" fetchpriority="high">
+          <button class="map-point" type="button" style="--x:22%;--y:55%" data-focus="structures" aria-label="Select structures" aria-pressed="false"><span>+</span></button>
+          <button class="map-point" type="button" style="--x:39%;--y:38%" data-focus="propulsion" aria-label="Select propulsion" aria-pressed="false"><span>+</span></button>
+          <button class="map-point is-active" type="button" style="--x:51%;--y:51%" data-focus="systems" aria-label="Select aircraft systems" aria-pressed="true"><span>+</span></button>
+          <button class="map-point" type="button" style="--x:51%;--y:31%" data-focus="interior" aria-label="Select interior and design" aria-pressed="false"><span>+</span></button>
+          <button class="map-point" type="button" style="--x:78%;--y:55%" data-focus="manufacturing" aria-label="Select manufacturing" aria-pressed="false"><span>+</span></button>
+        </div>
+        <div class="hero-map-areas" role="group" aria-label="Aircraft experience areas">
+          <button class="map-area" type="button" data-focus="structures" aria-pressed="false"><b>Structures</b><small>ASSEMBLY · CONFIG</small></button>
+          <button class="map-area" type="button" data-focus="propulsion" aria-pressed="false"><b>Propulsion</b><small>TEST · READINESS</small></button>
+          <button class="map-area is-active" type="button" data-focus="systems" aria-pressed="true"><b>Systems</b><small>INTEGRATION · FLOW</small></button>
+          <button class="map-area" type="button" data-focus="interior" aria-pressed="false"><b>Interior</b><small>DESIGN · SAFETY</small></button>
+          <button class="map-area" type="button" data-focus="manufacturing" aria-pressed="false"><b>Manufacturing</b><small>QUALITY · DELIVERY</small></button>
+        </div>
+        <div class="hero-map-readout" aria-live="polite" aria-atomic="true"><span class="map-readout-index" id="map-readout-index">03</span><div><span class="map-readout-label">SELECTED FOCUS</span><h2 id="map-readout-title">Aircraft systems</h2><p id="map-readout-copy">Connect engineering, production, quality and test with clear ownership.</p></div></div>
+        <div class="hero-map-foot"><span>CONCEPTUAL PORTFOLIO MAP · NOT AIRCRAFT TECHNICAL DATA</span><span>CHENNAI, INDIA</span></div>
       </div>
       <div class="hero-bottom"><span>FROM SHOP FLOOR TO PROGRAM VIEW</span><a href="#profile" aria-label="Scroll to profile">SCROLL TO EXPLORE <b>↓</b></a></div>
     </section>
