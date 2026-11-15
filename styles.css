@@ -277,4 +277,29 @@ body{background:#0a1217;color:#dce8e6}
 @media(max-width:760px){.lab-section{padding:35px 22px 76px}.lab-grid{grid-template-columns:1fr}.lab-visual{min-height:270px;border-right:0;border-bottom:1px solid #2a3d41}.lab-dashboard{padding:22px 18px 16px}.lab-topline{padding:13px 16px;font-size:8px}.chart-bars{height:76px}}
 @media(max-width:480px){.lab-topline span:last-child{max-width:120px;text-align:right;line-height:1.5}.lab-status-grid{gap:7px}.lab-status{padding:10px 9px}.lab-status strong{font-size:12px}.lab-status small{font-size:8px}.chart-labels{font-size:6px}.hero{min-height:760px}.hero-meta{gap:8px;flex-wrap:wrap;max-width:300px;line-height:1.8}}
 
+/* High-resolution clickable systems map in the opening section */
+.hero{display:grid;grid-template-columns:minmax(0,.86fr) minmax(0,1.14fr);gap:42px;align-items:center;min-height:900px;height:auto;max-height:none;padding-top:128px;padding-bottom:112px}
+.hero-copy{width:auto;max-width:620px;z-index:3}
+.hero h1{font-size:clamp(43px,4.25vw,61px);line-height:1.08;margin:28px 0 20px}
+.hero-map-card{position:relative;z-index:3;width:100%;padding:17px 18px 13px;background:linear-gradient(145deg,rgba(15,32,39,.97),rgba(7,17,22,.98));border:1px solid #30474c;box-shadow:0 24px 72px rgba(0,0,0,.24),inset 0 0 65px rgba(40,130,137,.06)}
+.hero-map-card:before{content:"";position:absolute;inset:0;pointer-events:none;background-image:linear-gradient(rgba(72,223,229,.025) 1px,transparent 1px),linear-gradient(90deg,rgba(72,223,229,.025) 1px,transparent 1px);background-size:28px 28px}
+.hero-map-topline,.hero-map-foot{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:12px;font:8px var(--mono);letter-spacing:.1em;color:#a8bfbd}
+.hero-map-topline span:last-child{white-space:nowrap;color:#d5e4e0}.hero-map-topline i{display:inline-block;width:6px;height:6px;margin-right:6px;border-radius:50%;background:#c5ef43;box-shadow:0 0 10px rgba(197,239,67,.7)}
+.hero-aircraft{position:relative;z-index:1;aspect-ratio:4/3;margin:13px 0 12px;overflow:hidden;background:#080d15;border:1px solid #385258}
+.hero-aircraft>img{display:block;width:100%;height:100%;object-fit:contain}
+.map-point{position:absolute;left:var(--x);top:var(--y);z-index:2;display:grid;place-items:center;width:34px;height:34px;padding:0;transform:translate(-50%,-50%);border:1px solid rgba(72,223,229,.9);border-radius:50%;background:rgba(7,18,22,.78);color:#48dfe5;font:20px/1 var(--sans);cursor:pointer;transition:transform .18s,background .18s,box-shadow .18s,border-color .18s}
+.map-point:nth-of-type(even){border-color:rgba(236,76,185,.85);color:#f078cb}.map-point:hover,.map-point:focus-visible{outline:none;transform:translate(-50%,-50%) scale(1.12);box-shadow:0 0 0 5px rgba(72,223,229,.15),0 0 20px rgba(72,223,229,.42)}
+.map-point.is-active{border-color:#c5ef43;background:#c5ef43;color:#0b1718;box-shadow:0 0 0 5px rgba(197,239,67,.15),0 0 20px rgba(197,239,67,.54)}
+.hero-map-areas{position:relative;z-index:1;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:6px}
+.map-area{min-width:0;min-height:51px;padding:7px 6px;text-align:left;background:rgba(255,255,255,.018);border:1px solid #2e4549;color:#dce8e5;cursor:pointer;transition:border-color .18s,background .18s}
+.map-area:hover,.map-area:focus-visible{outline:none;border-color:#4ba8aa}.map-area.is-active{border-color:#48dfe5;background:linear-gradient(145deg,rgba(72,223,229,.12),rgba(201,240,74,.035));box-shadow:inset 0 -2px #c5ef43}
+.map-area b,.map-area small{display:block;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.map-area b{font:600 9px var(--sans)}.map-area small{margin-top:5px;color:#91a7a6;font:6px var(--mono);letter-spacing:.045em}
+.hero-map-readout{position:relative;z-index:1;display:grid;grid-template-columns:27px 1fr;gap:12px;min-height:71px;margin-top:12px;padding:12px 3px 7px;border-top:1px solid #2b4044}
+.map-readout-index{display:grid;place-items:center;width:26px;height:26px;border:1px solid #c5ef43;color:#c5ef43;font:8px var(--mono)}
+.map-readout-label{display:block;color:#c5ef43;font:7px var(--mono);letter-spacing:.14em}.hero-map-readout h2{margin:4px 0;font:600 13px var(--display);color:#eef5f3}.hero-map-readout p{margin:0;color:#aabdbb;font:10px/1.45 var(--sans)}
+.hero-map-foot{padding-top:10px;border-top:1px solid rgba(72,223,229,.12);font-size:6px;color:#829997}
+.hero-bottom{z-index:4}
+@media(max-width:980px){.hero{grid-template-columns:1fr;gap:28px;min-height:0;padding:132px 6vw 112px}.hero-copy{max-width:760px}.hero-map-card{width:100%;max-width:800px;margin:0 auto}.hero h1{font-size:clamp(43px,7vw,62px)}}
+@media(max-width:680px){.hero{padding:116px 20px 102px;gap:25px}.hero h1{font-size:clamp(39px,11vw,50px);margin:22px 0 16px}.hero-lede{font-size:15px}.hero-map-card{padding:12px 11px 10px}.hero-map-topline{font-size:7px;letter-spacing:.06em}.hero-map-topline span:last-child{font-size:6px}.hero-aircraft{margin:10px 0}.map-point{width:27px;height:27px;font-size:16px}.hero-map-areas{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.map-area{min-height:46px;padding:6px}.map-area:nth-child(4){grid-column:1/2}.map-area:nth-child(5){grid-column:2/4}.map-area b{font-size:9px}.map-area small{font-size:6px}.hero-map-readout{min-height:68px}.hero-map-readout p{font-size:9px}.hero-map-foot{font-size:5px;letter-spacing:.04em}.hero-meta{margin-top:34px}.hero-bottom{font-size:7px}}
+
 
