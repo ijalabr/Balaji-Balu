@@ -19,7 +19,7 @@
     <a class="brand" href="#top" aria-label="Balaji Balu home"><span class="brand-mark">BB</span><span>BALAJI BALU<small>ENGINEERING LEADERSHIP</small></span></a>
     <button class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
     <nav id="site-nav" class="site-nav" aria-label="Main navigation">
-      <a href="#profile">Profile</a><a href="#impact">Impact</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a>
+      <a href="#profile">Profile</a><a href="#impact">Impact</a><a href="#systems">Systems</a><a href="#experience">Experience</a><a href="#expertise">Expertise</a>
       <a class="nav-contact" href="#contact">Let's connect <span aria-hidden="true">↗</span></a>
     </nav>
   </header>
@@ -59,6 +59,49 @@
           <article class="metric"><span class="metric-index">04</span><strong>6<span class="metric-plus">+</span></strong><span class="metric-title">PROJECTS ENABLED</span><p>Introduced SharePoint, Power BI and workflow automation for reporting and collaboration.</p></article>
         </div>
         <div class="impact-footnote"><span class="impact-line"></span><p>Also led and mentored an 8-engineer team; coordinated CI activity across Chennai and Bengaluru.</p></div>
+      </div>
+    </section>
+
+    <section class="systems-section" id="systems" aria-labelledby="systems-title">
+      <div class="systems-wrap">
+        <div class="systems-heading">
+          <div><p class="eyebrow"><span class="status-dot"></span> DIGITAL MANUFACTURING · SYSTEMS THINKING</p><h2 id="systems-title">One aircraft. <em>Many connected systems.</em></h2></div>
+          <p>A systems view of the work I lead across engineering, manufacturing, functional test and program delivery.</p>
+        </div>
+        <div class="systems-grid">
+          <div class="systems-copy">
+            <p class="systems-intro">Select a focus area to see how I connect technical work with production outcomes.</p>
+            <div class="systems-controls" role="group" aria-label="Aerospace experience focus areas">
+              <button class="system-control is-active" type="button" data-system="integration" aria-pressed="true"><span>01</span><b>Integration &amp; structure</b><i>Assembly · configuration</i></button>
+              <button class="system-control" type="button" data-system="test" aria-pressed="false"><span>02</span><b>Functional test</b><i>Readiness · issue closure</i></button>
+              <button class="system-control" type="button" data-system="manufacturing" aria-pressed="false"><span>03</span><b>Manufacturing</b><i>Process · quality · flow</i></button>
+              <button class="system-control" type="button" data-system="digital" aria-pressed="false"><span>04</span><b>Digital engineering</b><i>Automation · visibility</i></button>
+              <button class="system-control" type="button" data-system="delivery" aria-pressed="false"><span>05</span><b>Program delivery</b><i>People · risks · outcomes</i></button>
+            </div>
+            <div class="system-readout" aria-live="polite" aria-atomic="true"><span class="readout-label">SELECTED FOCUS</span><h3 id="system-title">Integration &amp; structure</h3><p id="system-description">Connect design intent, build readiness and shop-floor feedback so the aircraft comes together with clear ownership and configuration.</p></div>
+          </div>
+          <div class="aircraft-map" data-active-system="integration">
+            <div class="map-topline"><span>ENGINEERING SYSTEMS MAP</span><span><i></i> INTERACTIVE VIEW</span></div>
+            <svg class="aircraft-diagram" viewBox="0 0 640 680" role="img" aria-labelledby="aircraft-map-title aircraft-map-desc">
+              <title id="aircraft-map-title">Illustrative aircraft systems map</title><desc id="aircraft-map-desc">A top-down conceptual aircraft outline with interactive focus points for integration, test, manufacturing, digital engineering and program delivery.</desc>
+              <defs><pattern id="map-grid" width="32" height="32" patternUnits="userSpaceOnUse"><path d="M32 0H0V32" fill="none" stroke="currentColor" stroke-opacity=".08" stroke-width="1"/></pattern><radialGradient id="aircraft-glow"><stop offset="0" stop-color="#45e2eb" stop-opacity=".18"/><stop offset="1" stop-color="#45e2eb" stop-opacity="0"/></radialGradient></defs>
+              <rect width="640" height="680" fill="url(#map-grid)"/>
+              <circle cx="320" cy="337" r="255" fill="none" stroke="currentColor" stroke-opacity=".12" stroke-dasharray="3 10"/>
+              <circle cx="320" cy="337" r="205" fill="none" stroke="currentColor" stroke-opacity=".1"/>
+              <ellipse cx="320" cy="340" rx="170" ry="250" fill="url(#aircraft-glow)"/>
+              <path class="aircraft-outline" d="M320 46C307 58 302 86 300 125L294 238 148 326Q126 340 139 352L291 307 287 425 232 489Q225 500 237 506L297 476 303 572 294 614Q294 628 320 646 346 628 346 614L337 572 343 476 403 506Q415 500 408 489L353 425 349 307 501 352Q514 340 492 326L346 238 340 125C338 86 333 58 320 46Z"/>
+              <path class="aircraft-detail" d="M320 58V625M300 238H340M291 307L320 320 349 307M287 425L320 437 343 425M297 476L320 463 337 476"/>
+              <path class="aircraft-detail" d="M198 312L184 334 203 344M442 312L456 334 437 344"/>
+              <g class="map-node node-integration"><circle cx="162" cy="337" r="16"/><circle cx="162" cy="337" r="5"/></g>
+              <g class="map-node node-test"><circle cx="320" cy="228" r="16"/><circle cx="320" cy="228" r="5"/></g>
+              <g class="map-node node-manufacturing"><circle cx="320" cy="440" r="16"/><circle cx="320" cy="440" r="5"/></g>
+              <g class="map-node node-digital"><circle cx="207" cy="337" r="16"/><circle cx="207" cy="337" r="5"/></g>
+              <g class="map-node node-delivery"><circle cx="320" cy="95" r="16"/><circle cx="320" cy="95" r="5"/></g>
+              <text x="34" y="309">AIRFRAME</text><text x="350" y="222">FUNCTIONAL TEST</text><text x="350" y="451">PRODUCTION FLOW</text><text x="34" y="365">DIGITAL TOOLS</text><text x="350" y="90">PROGRAM VIEW</text>
+            </svg>
+            <div class="map-bottomline"><span>CONCEPTUAL VIEW · NOT AIRCRAFT TECHNICAL DATA</span><span>CHENNAI, INDIA</span></div>
+          </div>
+        </div>
       </div>
     </section>
 
@@ -104,3 +147,4 @@
   <footer class="site-footer"><a class="brand footer-brand" href="#top"><span class="brand-mark">BB</span><span>BALAJI BALU<small>AEROSPACE ENGINEERING</small></span></a><span>ENGINEERED WITH PURPOSE · <span id="year">2026</span></span><a href="#top">BACK TO TOP ↑</a></footer>
 </body>
 </html>
+
