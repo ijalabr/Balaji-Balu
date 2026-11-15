@@ -2,7 +2,7 @@ name: Deploy portfolio to GitHub Pages
 
 on:
   push:
-    branches: ["main"]
+    branches: ["master"]
   workflow_dispatch:
 
 permissions:
@@ -17,17 +17,14 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
-      pages: read
     steps:
       - name: Check out portfolio
         uses: actions/checkout@v6
-      - name: Configure GitHub Pages
-        uses: actions/configure-pages@v5
       - name: Prepare static site artifact
         run: |
           mkdir -p _site/assets
           cp index.html styles.css script.js .nojekyll _site/
-          cp assets/favicon.svg assets/*.jpg assets/*.pdf _site/assets/
+          cp assets/*.svg assets/*.jpg assets/*.pdf _site/assets/
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v4
         with:
@@ -46,3 +43,4 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+
