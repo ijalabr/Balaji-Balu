@@ -130,3 +130,86 @@ body{background:var(--paper);color:#dce7e8}
 @media(max-width:900px){.systems-section{padding-left:6vw;padding-right:6vw}.systems-grid{grid-template-columns:minmax(250px,.85fr) minmax(0,1.15fr);gap:24px}.aircraft-map{min-height:560px}.aircraft-diagram{height:475px}}
 @media(max-width:680px){.systems-section{padding:76px 23px}.systems-heading{display:block;margin-bottom:28px}.systems-heading>p{margin-top:13px}.systems-grid{display:flex;flex-direction:column;gap:20px}.aircraft-map{order:-1;min-height:390px;padding:12px}.aircraft-diagram{height:auto;min-height:345px}.map-topline,.map-bottomline{font-size:8px}.map-bottomline{letter-spacing:.04em}.systems-controls{grid-template-columns:1fr 1fr;gap:6px}.system-control{grid-template-columns:25px 1fr;gap:7px;padding:10px 8px}.system-control>span{width:23px;height:23px;font-size:8px}.system-control b{font-size:12px}.system-control i{font-size:8px}.system-readout{padding:17px 0 0;margin-top:18px}.system-readout h3{font-size:17px}.system-readout p{font-size:14px}.systems-heading h2{font-size:36px}}
 
+/* Interactive systems map direction: deep blue, electric blue, ice blue */
+:root{--navy:#071022;--navy2:#0b1830;--ink:#edf4ff;--muted:#a6b7d0;--paper:#08111f;--white:#0e1b2f;--line:#243651;--blue:#45b9ff;--orange:#839cff}
+body{background:#08111f;color:#dce8f8}
+.site-header{background:rgba(5,12,24,.82);border-bottom-color:rgba(75,157,255,.2)}
+.brand-mark,.button-quiet span{color:#63c8ff}
+.site-nav .nav-contact{border-color:rgba(94,166,255,.42)}
+.site-nav a:hover,.site-nav a:focus-visible{color:#66c8ff}
+.hero{background:#071022}
+.hero-photo{filter:saturate(.56) brightness(.68) hue-rotate(4deg)}
+.hero-visual:after{background:linear-gradient(90deg,rgba(5,12,24,.94) 0%,rgba(5,12,24,.78) 39%,rgba(5,12,24,.12) 80%),linear-gradient(0deg,rgba(5,12,24,.88),transparent 36%)}
+.hero-grid{background-image:linear-gradient(rgba(93,160,255,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(93,160,255,.07) 1px,transparent 1px)}
+.hero h1 em,.impact-heading h2 em,.intro-content h2 em,.work-heading h2 em,.experience-title h2 em,.expertise-main h2 em,.contact-inner h2 em{color:#55c3ff}
+.status-dot{background:#7798ff;box-shadow:0 0 0 4px rgba(119,152,255,.13)}
+.button-primary{background:#3d91ff;color:#061329}
+.button-primary:hover{background:#63b0ff}
+.hero-bottom{border-color:rgba(85,165,255,.23)}
+.section{background:#091321}
+.section-label span:first-child{color:#78a0ff}
+.intro-content h2,.work-heading h2,.expertise-main h2,.systems-heading h2{color:#edf4ff}
+.intro-content h2 em,.work-heading h2 em,.expertise-main h2 em,.systems-heading h2 em{color:#55bdff}
+.intro-text,.story p,.skill-columns p,.systems-heading>p,.systems-intro{color:#b5c5da}
+.profile-tags span,.story-tags span,.programs span{border-color:#2d4567;color:#bfd2e9}
+.impact-section,.experience-section{background:#0c1930}
+.section-label-light{color:#a8bad3}
+.impact-heading p,.metric p,.impact-footnote,.experience-title>p:last-child,.role-copy{color:#b8c7dc}
+.metrics-grid,.metric,.timeline,.role{border-color:#293e5b}
+.metric-title{color:#c1d1e4}
+.metric-index,.role-date{color:#9cb2ce}
+.role-company{color:#67c6ff}
+.programs span{color:#d4e1f2;border-color:#385376}
+.visual-section{background:#091525}
+.visual-section-head h2{color:#eef5ff}
+.visual-section-head h2 em{color:#59bfff}
+.visual-section-head>p{color:#aabbd1}
+.visual-card{border-color:#263e5d}
+.visual-card img{filter:saturate(.7) contrast(1.04)}
+.visual-card figcaption span{color:#88a9ff}
+.visual-card:after{background:linear-gradient(0deg,rgba(5,13,27,.94),transparent)}
+.expertise-section{background:#091321}
+.skill-columns>div,.degree,.awards{border-color:#293e59}
+.skill-columns h3,.card-kicker,.awards>span{color:#7abfff}
+.education-card{background:#101d31;border-color:#2b4160}
+.degree>span,.degree p,.awards p{color:#b0bfd4}
+.credential-list span{color:#d6e3f3}
+.contact-section{background:#0a1730}
+.contact-orbit,.contact-orbit:before,.contact-orbit:after{border-color:rgba(84,159,255,.17)}
+.contact-note{color:#b8c8dc}
+.contact-links a{color:#e1ebf7;border-color:#42618a}
+.contact-location{color:#a8bad1}
+.site-footer{background:#050d19;color:#9aacc5}
+.footer-brand{color:#fff}
+.systems-section{background:radial-gradient(ellipse at 78% 48%,rgba(43,107,203,.2),transparent 43%),linear-gradient(140deg,#091629,#08111f 68%);border-color:#1d3556;color:#edf4ff}
+.systems-heading h2{color:#edf4ff}
+.systems-heading h2 em{color:#58c0ff}
+.systems-heading>p,.systems-intro{color:#aebfda}
+.system-control{background:rgba(32,67,112,.13);border-color:#263f62;color:#dae7f8}
+.system-control:hover{border-color:#5484bc;background:rgba(50,104,170,.17)}
+.system-control.is-active{background:linear-gradient(100deg,rgba(61,145,255,.2),rgba(112,145,255,.08));border-color:#5daaff;box-shadow:inset 3px 0 #4daeff}
+.system-control>span{border-color:#38577f;color:#54beff}
+.system-control.is-active>span{border-color:#8da5ff;color:#9fb1ff}
+.system-control i{color:#9eb1ce}
+.system-readout{border-color:#2b4261}
+.readout-label{color:#8da9ff}
+.system-readout h3{color:#eff5ff}
+.system-readout p{color:#b2c3dc}
+.aircraft-map{background:linear-gradient(145deg,rgba(14,31,57,.98),rgba(7,16,32,.99));border-color:#2c4970;box-shadow:0 24px 70px rgba(0,0,0,.28),inset 0 0 70px rgba(43,108,203,.08)}
+.aircraft-map:before{background:linear-gradient(135deg,rgba(61,145,255,.12),transparent 42%),radial-gradient(ellipse at center,rgba(55,123,220,.17),transparent 69%)}
+.map-topline,.map-bottomline{color:#a9bedb}
+.map-topline span:last-child{color:#d1def0}
+.map-topline i{background:#63c0ff;box-shadow:0 0 12px #63c0ff}
+.aircraft-diagram{color:#56b9ff}
+.aircraft-outline{fill:rgba(69,185,255,.06);stroke:#56b9ff;filter:drop-shadow(0 0 7px rgba(65,158,255,.1))}
+.aircraft-detail{stroke:rgba(109,169,255,.48)}
+.aircraft-map[data-active-system="integration"] .node-integration,.aircraft-map[data-active-system="test"] .node-test,.aircraft-map[data-active-system="manufacturing"] .node-manufacturing,.aircraft-map[data-active-system="digital"] .node-digital,.aircraft-map[data-active-system="delivery"] .node-delivery{color:#a5b5ff;filter:drop-shadow(0 0 10px rgba(116,153,255,.85))}
+.map-node{color:#51c2ff}
+.map-node circle:first-child{fill:rgba(67,151,255,.1)}
+.aircraft-diagram text{fill:#b1c8e7}
+.map-bottomline{border-color:rgba(90,157,255,.22);color:#8fa7c8}
+@media(max-width:680px){
+  .systems-heading h2{color:#edf4ff}
+  .system-control{background:rgba(32,67,112,.16)}
+}
+
