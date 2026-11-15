@@ -17,9 +17,12 @@ jobs:
     runs-on: ubuntu-latest
     permissions:
       contents: read
+      pages: read
     steps:
       - name: Check out portfolio
         uses: actions/checkout@v6
+      - name: Configure GitHub Pages
+        uses: actions/configure-pages@v5
       - name: Prepare static site artifact
         run: |
           mkdir -p _site/assets
